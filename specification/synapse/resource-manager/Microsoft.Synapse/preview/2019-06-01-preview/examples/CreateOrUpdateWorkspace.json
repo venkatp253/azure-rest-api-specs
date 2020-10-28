@@ -23,7 +23,16 @@
         "sqlAdministratorLogin": "login",
         "sqlAdministratorLoginPassword": "password",
         "managedVirtualNetwork": "default",
-        "managedResourceGroupName": "workspaceManagedResourceGroupUnique"
+        "managedResourceGroupName": "workspaceManagedResourceGroupUnique",
+        "workspaceRepositoryConfiguration": {
+          "accountName": "mygithubaccount",
+          "collaborationBranch": "master",
+          "hostName": "",
+          "projectName": "myproject",
+          "repositoryName": "myrepository",
+          "rootFolder": "/",
+          "type": "FactoryGitHubConfiguration"
+        }
       },
       "location": "East US",
       "tags": {
@@ -114,7 +123,7 @@
           "sqlAdministratorLoginPassword": "password",
           "managedResourceGroupName": "workspaceManagedResourceGroupUnique",
           "managedVirtualNetwork": "default",
-          "provisioningState": "Provisioning"
+          "provisioningState": "Provisioning" 
         },
         "tags": {
           "key": "value"

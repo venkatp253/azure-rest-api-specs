@@ -728,6 +728,40 @@
         }
       }
     },
+    "WorkspaceRepositoryConfiguration": {
+      "description": "Git integration settings",
+      "type": "object",
+      "properties": {
+        "accountName": {
+          "description": "Account name",
+          "type": "string"
+        },
+        "collaborationBranch": {
+          "description": "Collaboration branch",
+          "type": "string"
+        },
+        "hostName": {
+          "description": "GitHub Enterprise host name. For example: https://github.mydomain.com",
+          "type": "string"
+        },
+        "projectName": {
+          "description": "VSTS project name",
+          "type": "string"
+        },
+        "repositoryName": {
+          "description": "Repository name",
+          "type": "string"
+        },
+        "rootFolder": {
+          "description": "Root folder to use in the repository",
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of workpace repositoryID configuration. Example WorkspaceVSTSConfiguration, WorkspaceGitHubConfiguration",
+          "type": "string"
+        }
+      }
+    },
     "WorkspaceAadAdminInfo": {
       "description": "Workspace active directory administrator",
       "type": "object",
@@ -823,6 +857,10 @@
         "managedVirtualNetworkSettings": {
           "description": "Managed Virtual Network Settings",
           "$ref": "#/definitions/ManagedVirtualNetworkSettings"
+        },
+        "workspaceRepositoryConfiguration": {
+          "desciption": "Git integration settings",
+          "$ref": "#/definitions/WorkspaceRepositoryConfiguration"
         }
       }
     },
@@ -859,6 +897,10 @@
         "managedVirtualNetworkSettings": {
           "description": "Managed Virtual Network Settings",
           "$ref": "#/definitions/ManagedVirtualNetworkSettings"
+        },
+        "workspaceRepositoryConfiguration": {
+          "desciption": "Git integration settings",
+          "$ref": "#/definitions/WorkspaceRepositoryConfiguration"
         },
         "provisioningState": {
           "description": "Resource provisioning state",
